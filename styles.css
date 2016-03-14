@@ -29,8 +29,9 @@
 	height: 100%
 }
 
-#progressbar {
-	height: 50% !important;
+.progressBar {
+	height: 30% !important;
+	margin: 5px;
 }
 
 .botoes {
@@ -41,4 +42,10 @@
 .botao {
 	width: 23%;
 	height: 100% !important;
+}
+
+.counterLabels {
+	border: 1px solid purple;
+	height: 33% !important;
+	vertical-align: baseline;
 }
