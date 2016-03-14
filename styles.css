@@ -26,6 +26,6 @@
 	width: 100%;
 }
 
-.progressBar {
+#progressbar {
 	height: 120px !important;
 }
