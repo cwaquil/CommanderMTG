@@ -64,10 +64,10 @@
 }
 
 .lifeLabel {
-	margin: 0px 0px 0px 0px;
+	margin: -10px 0px 0px 0px;
 	/* 	border: 1px solid gray; */
 	float: right;
 	height: 40%;
 	width: 14%;
-	font-size: 2.1em;
+	font-size: 2.2em;
 }
