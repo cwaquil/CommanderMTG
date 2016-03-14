@@ -1,20 +1,19 @@
-.classAccordion {
-	display: table;
-}
+/* .classAccordion { */
+/* 	display: table; */
+/* } */
+/* .parte { */
+/* 	float: left; */
+/* 	width: 25%; */
+/* } */
 
-.parte {
-	float: left;
-	width: 25%;
-}
+/* #nomes { */
+/* 	border: 1px solid blue; */
+/* } */
 
-#nomes {
-	border: 1px solid blue;
-}
+/* #progress { */
+/* 	border: 1px solid black; */
+/* } */
 
-#progress {
-	border: 1px solid black;
-}
-
-#counters {
-	border: 1px solid red;
-}
+/* #counters { */
+/* 	border: 1px solid red; */
+/* } */
