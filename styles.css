@@ -13,8 +13,8 @@
 
 #life {
 	/* 	border: 1px solid black; */
-	height: 10%;
-	display: table;
+	height: 20%;
+	display: block;
 	width: 100%;
 }
 
@@ -59,8 +59,8 @@
 	text-align: right;
 }
 
-.lifeLabel {
-	margin: 2px 5px 0px 0px;
+.lifeLabel  {
+	margin: 1px 5px 0px 0px;
 	/* 	border: 1px solid gray; */
 	float: right;
 }
