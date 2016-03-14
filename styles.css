@@ -1,11 +1,20 @@
-.nomePlayer {
-	
+.classAccordion {
+	display: table;
 }
 
-.progressBar {
-	
+.parte {
+	float: left;
+	width: 25%;
 }
 
-.nomeCommander {
-	
+#nomes {
+	border: 1px solid blue;
+}
+
+#progress {
+	border: 1px solid black;
+}
+
+#counters {
+	border: 1px solid red;
 }
