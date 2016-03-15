@@ -5,12 +5,16 @@
 <meta charset="UTF-8">
 <title>Contador de Vida</title>
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet"
-	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
 <script>
 	$(function() {
 		$("#accordion").accordion({
@@ -29,49 +33,125 @@
 
 <body>
 
-	<div id="accordion">
-		<div id="itemAccordion" class="classAccordion">
 
-			<div id="inteiro">
-				<div class="lifeLabel">
-					<label>000</label>
-				</div>
-				<div id="nomes">
-					<label class="nomePlayer">Caio</label> - <label
-						class="nomeCommander">Teysa, Orzov Scion</label>
-				</div>
-				<div id="life">
-					<div id="progressbar" class="progressBar"></div>
 
-				</div>
-
-				<div id="bottom" class="bottom">
-					<button class="bottomItem">+1</button>
-					<button class="bottomItem">-1</button>
-					<button class="bottomItem">+5</button>
-					<button class="bottomItem">-5</button>
-					<div id="counters" class="bottomItem">
-						<div class="counterLabels">
-							<label>Po</label> <label>00</label>
+	<div class="panel-group" id="accordion" role="tablist"
+		aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion"
+						href="#collapseOne" aria-expanded="true"
+						aria-controls="collapseOne"> <label class="nomePlayer">Caio</label>
+						- <label class="nomeCommander">Teysa, Orzov Scion</label>
+					</a>
+				</h4>
+				<div id="itemAccordion" class="classAccordion">
+					<div id="inteiro">
+						<div class="lifeLabel">
+							<label>000</label>
 						</div>
-						<div class="counterLabels">
-							<label>In</label> <label>00</label>
+
+						<div id="progressbar" class="progress progressBar">
+							<div class="progress-bar" role="progressbar" aria-valuenow="10"
+								aria-valuemin="0" aria-valuemax="40" style="width: 98%;">
+							</div>
 						</div>
+
+						<div id="bottom" class="bottom">
+							<p>
+								<a class="btn btn-primary btn-lg bottomItem" href="#"
+									role="button">+1</a>
+							</p>
+							<p>
+								<a class="btn btn-primary btn-lg bottomItem" href="#"
+									role="button">-1</a>
+							</p>
+							<p>
+								<a class="btn btn-primary btn-lg bottomItem" href="#"
+									role="button">+5</a>
+							</p>
+							<p>
+								<a class="btn btn-primary btn-lg bottomItem" href="#"
+									role="button">-5</a>
+							</p>
+
+						</div>
+
 					</div>
+
 				</div>
-
-
-
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in"
+				role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">TESTE TESTE TESTE TESTE TESTE TESTE
+					TESTE TESTE TESTE TESTE TESTE TESTE</div>
 			</div>
 		</div>
-		<div>
-			<p>Commander 1254264714</p>
-			<p>Commander</p>
-			<p>Commander</p>
-			<p>Commander</p>
-			<p>Commander</p>
-		</div>
 	</div>
+
+
+	<!-- 	<div id="accordion"> -->
+	<!-- 		<div id="itemAccordion" class="classAccordion"> -->
+
+	<!-- 			<div id="inteiro"> -->
+	<!-- 				<div class="lifeLabel"> -->
+	<!-- 					<label>000</label> -->
+	<!-- 				</div> -->
+	<!-- 				<div id="nomes"> -->
+	<!-- 					<label class="nomePlayer">Caio</label> - <label -->
+	<!-- 						class="nomeCommander">Teysa, Orzov Scion</label> -->
+	<!-- 				</div> -->
+	<!-- 				<div id="life"> -->
+	<!-- 					<div id="progressbar" class="progressBar"> -->
+	<!-- 						<div class="progress"> -->
+	<!-- 							<div class="progress-bar" role="progressbar" aria-valuenow="60" -->
+	<!-- 								aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> -->
+	<!-- 								60%</div> -->
+	<!-- 						</div> -->
+	<!-- 					</div> -->
+
+	<!-- 				</div> -->
+
+	<!-- 				<div id="bottom" class="bottom"> -->
+	<!-- 					<p> -->
+	<!-- 						<a class="btn btn-primary btn-lg bottomItem" href="#" -->
+	<!-- 							role="button">+1</a> -->
+	<!-- 					</p> -->
+	<!-- 					<p> -->
+	<!-- 						<a class="btn btn-primary btn-lg bottomItem" href="#" -->
+	<!-- 							role="button">-1</a> -->
+	<!-- 					</p> -->
+	<!-- 					<p> -->
+	<!-- 						<a class="btn btn-primary btn-lg bottomItem" href="#" -->
+	<!-- 							role="button">+5</a> -->
+	<!-- 					</p> -->
+	<!-- 					<p> -->
+	<!-- 						<a class="btn btn-primary btn-lg bottomItem" href="#" -->
+	<!-- 							role="button">-5</a> -->
+	<!-- 					</p> -->
+	<!-- 					<div id="counters" class="bottomItem"> -->
+	<!-- 						<div class="counterLabels"> -->
+	<!-- 							<label>Po</label> <label>00</label> -->
+	<!-- 						</div> -->
+	<!-- 						<div class="counterLabels"> -->
+	<!-- 							<label>In</label> <label>00</label> -->
+	<!-- 						</div> -->
+	<!-- 					</div> -->
+	<!-- 				</div> -->
+
+
+
+	<!-- 			</div> -->
+	<!-- 		</div> -->
+	<!-- 		<div> -->
+	<!-- 			<p>Commander 1254264714</p> -->
+	<!-- 			<p>Commander</p> -->
+	<!-- 			<p>Commander</p> -->
+	<!-- 			<p>Commander</p> -->
+	<!-- 			<p>Commander</p> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
 
 </body>
 
